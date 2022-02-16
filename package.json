@@ -11,14 +11,18 @@
     "types"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
+    "dev": "vite --",
+    "build": "vite build && npm run package-widget",
+    "package-widget": "npx package-nx-widget",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "lit": "^2.0.2"
+    "dashboard-widget-state": "^0.3.3",
+    "lit": "^2.0.2",
+    "widget-dashboard-tools": "^0.4.4"
   },
   "devDependencies": {
-    "vite": "^2.7.2",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
   }
 }
